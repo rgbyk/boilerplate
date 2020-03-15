@@ -1,4 +1,4 @@
-# @rgbyk/jekyll
+# @rgbyk/boilerplate
 
 ## Requirements
 - [node](https://nodejs.org/) v12.11.0
