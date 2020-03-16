@@ -1,6 +1,6 @@
 {
   "name": "@rgbyk/boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "an over-engineered boilerplate, but a good one indeed.",
   "keywords": [
     "rgbyk",
@@ -17,18 +17,19 @@
   "license": "MIT",
   "author": "Daniel Haim",
   "scripts": {
+    "dev": "npm run watch:build-styles & npm run watch:build-scripts",
     "build-scripts": "chmod +x ./bin/lib/build-scripts.sh && ./bin/lib/build-scripts.sh",
     "build-styles": "chmod +x ./bin/lib/build-styles.sh && ./bin/lib/build-styles.sh",
     "unpack-boilerplate": "chmod +x ./bin/lib/unpack-boilerplate.sh && ./bin/lib/unpack-boilerplate.sh",
     "unpack-rgbyk": "chmod +x ./bin/lib/unpack-rgbyk.sh && ./bin/lib/unpack-rgbyk.sh",
-    "watch:build-scripts": "nodemon --watch src/scss -e scss -x \"npm run build-scripts\"",
+    "watch:build-scripts": "nodemon --watch src/js -e js -x \"npm run build-scripts\"",
     "watch:build-styles": "nodemon --watch src/scss -e scss -x \"npm run build-styles\""
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
-    "@rgbyk/color": "^1.0.5",
+    "@rgbyk/color": "^1.1.2",
     "autoprefixer": "^9.7.4",
     "browserslist": "^4.8.7",
     "caniuse-lite": "^1.0.30001027",

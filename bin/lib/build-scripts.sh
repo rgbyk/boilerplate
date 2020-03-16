@@ -48,4 +48,9 @@ echo $black "... $ terser $FOLDER_DIST_ASSETS_JS/app.js;" $reset
 terser $FOLDER_DIST_ASSETS_JS/app.js -o $FOLDER_DIST_ASSETS_JS/app.min.js -c -m &>/dev/null &
 sleep 0.5
 
+if [ -d $FOLDER_JEKYLL_ASSETS_JS ]; then
+    cp $FOLDER_DIST_ASSETS_JS/app.min.js $FOLDER_JEKYLL_ASSETS_JS
+fi
+
+
 echo $green_ "... $ build-scripts.sh\n" $reset

@@ -20,4 +20,8 @@ sass $FOLDER_SRC_SCSS/$FILE_STYLE.scss $FOLDER_DIST_ASSETS_CSS/$FILE_STYLE.css -
 echo $black_ "... $ postcss $FILE_STYLE;" $reset
 postcss $FOLDER_DIST_ASSETS_CSS/$FILE_STYLE.css -o $FOLDER_DIST_ASSETS_CSS/$FILE_STYLE.min.css
 
+if [ -d $FOLDER_JEKYLL_SASS ]; then
+    cp $FOLDER_DIST_ASSETS_CSS/$FILE_STYLE.min.css $FOLDER_JEKYLL_SASS/_color.scss
+fi
+
 echo $green_ "... $ build-styles.sh;\n" $reset
