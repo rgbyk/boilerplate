@@ -10,14 +10,14 @@
 
 set -e
 
-chmod +x config.sh
-chmod +x branding.sh
-chmod +x checks.sh
-chmod +x kill.sh
-chmod +x build-scripts.sh
-chmod +x build-styles.sh
-chmod +x unpack-boilerplate.sh
-chmod +x unpack-rgbyk.sh
+chmod +x ./bin/lib/config.sh
+chmod +x ./bin/lib/branding.sh
+chmod +x ./bin/lib/checks.sh
+chmod +x ./bin/lib/kill.sh
+chmod +x ./bin/lib/build-scripts.sh
+chmod +x ./bin/lib/build-styles.sh
+chmod +x ./bin/lib/unpack-boilerplate.sh
+chmod +x ./bin/lib/unpack-rgbyk.sh
 
 . ./bin/lib/config.sh
 . ./bin/lib/branding.sh
