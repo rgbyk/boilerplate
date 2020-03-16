@@ -1,9 +1,9 @@
 {
   "name": "@rgbyk/boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "an over-engineered boilerplate, but a good one indeed.",
   "keywords": [
-    "jekyll",
+    "rgbyk",
     "boilerplate"
   ],
   "homepage": "https://github.com/rgbyk/boilerplate#readme",
