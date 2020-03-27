@@ -1,0 +1,84 @@
+<div class="aside-section aside-section--form cvd">
+    <h3 class="aside-section--title">Options</h3>
+    <div class="aside-section--list">
+        <div class="aside-section--list_item">
+            <label for="demo-color-brand">Brand Color</label>
+            <select name="color-brand" id="demo-color-brand" onchange="onChangeColorBrand(); changeStoreDataSelect(this)" class="store-data--select">
+                <option value="default" selected="selected">Default</option>
+                <option value="airbnb">Airbnb</option>
+                <option value="spotify">Spotify</option>
+                <option value="twitter">Twitter</option>
+                <option value="cocacola">Coca Cola</option>
+                <option value="disneyxd">Disney XD</option>
+                <option value="facebook">Facebook</option>
+                <option value="snapchat">Snapchat</option>
+            </select>
+        </div>
+        <div class="aside-section--list_item">
+            <label for="demo-color-model">Color Model</label>
+            <select name="color-model" id="demo-color-model" onchange="onChangeColorBrand(); changeStoreDataSelect(this);" class="store-data--select">
+                <option value="rgb" selected="selected">RGB</option>
+                <option value="ryb">RYB</option>
+            </select>
+        </div>
+    </div>
+    <hr class="size-xs">
+    <h3 class="aside-section--title">Schemes</h3>
+    <div class="aside-section--list_item">
+        <label for="demo-color-harmony" class="aside-section--switch_label">Color Harmony</label>
+        <button role="switch" aria-checked="false" id="demo-color-harmony" class="aside-section--switch switch store-data">
+            <span class="false">false</span>
+            <span class="true">true</span>
+        </button>
+    </div>
+    <div class="aside-section--list">
+        <div class="aside-section--list_item">
+            <label for="demo-color-neutral" class="aside-section--switch_label">Neutral</label>
+            <button role="switch" aria-checked="false" id="demo-color-neutral" class="aside-section--switch switch store-data">
+                <span class="false">false</span>
+                <span class="true">true</span>
+            </button>
+        </div>
+        <div class="aside-section--list_item" style="display: none;">
+            <label for="demo-color-pastel" class="aside-section--switch_label">Pastel</label>
+            <button role="switch" aria-checked="false" id="demo-color-pastel" class="aside-section--switch switch store-data">
+                <span class="false">false</span>
+                <span class="true">true</span>
+            </button>
+        </div>
+        {% comment %}
+        <div class="aside-section--list_item">
+            <label for="demo-color-alpha" class="aside-section--switch_label">Alpha</label>
+            <button role="switch" aria-checked="true" id="demo-color-alpha" class="aside-section--switch switch store-data">
+                <span class="false">false</span>
+                <span class="true">true</span>
+            </button>
+        </div>
+        {% endcomment %}
+    </div>
+    <hr class="size-xs">
+    <h3 class="aside-section--title">Accessibility</h3>
+    <div class="aside-section--list">
+        <div class="aside-section--list_item">
+            <label for="toggleTheme" class="aside-section--switch_label">Dark Mode</label>
+            <button role="switch" aria-checked="false" id="toggleTheme" class="aside-section--switch switch store-data">
+                <span class="false">false</span>
+                <span class="true">true</span>
+            </button>
+        </div>
+        <div class="aside-section--list_item">
+            <label for="demo-color-cvd">Color Blindness</label>
+            <select name="color-cvd" id="demo-color-cvd" onchange="onChangeColorBlindness(); changeStoreDataSelect(this);" class="store-data--select">
+                <option selected="selected">None</option>
+                <option value="protanopia">Protanopia</option>
+                <option value="protanomaly">Protanomaly</option>
+                <option value="deuteranopia">Deuteranopia</option>
+                <option value="deuteranomaly">Deuteranomaly</option>
+                <option value="tritanopia">Tritanopia</option>
+                <option value="tritanomaly">Tritanomaly</option>
+                <option value="achromatopsia">Achromatopsia</option>
+                <option value="achromatomaly">Achromatomaly</option>
+            </select>
+        </div>
+    </div>
+</div>

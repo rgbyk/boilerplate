@@ -1,25 +1,21 @@
 function getCookie(name) {
-    var dc = document.cookie;
-    var prefix = name + "=";
-    var begin = dc.indexOf("; " + prefix);
+    const dc = document.cookie;
+    const prefix = `${name}=`;
+    let begin = dc.indexOf(`; ${prefix}`);
     if (begin == -1) {
         begin = dc.indexOf(prefix);
         if (begin != 0) return null;
-    }
-    else
-    {
+    } else {
         begin += 2;
         var end = document.cookie.indexOf(";", begin);
         if (end == -1) {
-        end = dc.length;
+            end = dc.length;
         }
     }
-    // because unescape has been deprecated, replaced with decodeURI
-    //return unescape(dc.substring(begin + prefix.length, end));
     return decodeURI(dc.substring(begin + prefix.length, end));
-} 
+}
 
-document.querySelectorAll(".store-data--select").forEach(function(e) {
+document.querySelectorAll(".store-data--select").forEach(e => {
     let id = e.getAttribute("id");
     let cookie = getCookie(id);
 
@@ -28,7 +24,7 @@ document.querySelectorAll(".store-data--select").forEach(function(e) {
     }
 });
 
-function changeStoreDataSelect(e){
+function changeStoreDataSelect(e) {
     let id = e.getAttribute("id");
     let option = e.options[e.selectedIndex].value;
     Cookies.set(id, option);

@@ -1,15 +1,15 @@
-// // ==========================================
-// // ! Toggle Grid Overlay
-// // ==========================================
+// ==========================================
+// ! Toggle Grid Overlay
+// ==========================================
 
-// function setGridOverlayTo(e){
-//     if ( e == "true" ){
+// function setGridOverlayTo(e) {
+//     if (e == "true") {
 //         document.getElementById("siteGridOverlay").classList.add("d-block");
 //         document.getElementById("siteGridOverlay").classList.remove("d-none");
-//     } else if ( e == "false" ){
+//     } else if (e == "false") {
 //         document.getElementById("siteGridOverlay").classList.remove("d-block");
 //         document.getElementById("siteGridOverlay").classList.add("d-none");
-//     } else{
+//     } else {
 //         document.getElementById("siteGridOverlay").classList.remove("d-block");
 //         document.getElementById("siteGridOverlay").classList.add("d-none");
 //     }
@@ -53,7 +53,7 @@
 
 // function siteToggleGrid() {
 //     checkGridCookie();
-//     document.getElementById("toggleGrid").addEventListener("click", function() {
+//     document.getElementById("toggleGrid").addEventListener("click", () => {
 //         checkGridState();
 //     });
 // }

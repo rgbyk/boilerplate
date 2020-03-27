@@ -1,6 +1,9 @@
 # Ignore directories
 /dist
-/jekyll
+jekyll/assets/css/fonts
+jekyll/_site
+jekyll/Gemfile.lock
+jekyll/.jekyll-cache
 /node_modules
 package-lock.json
 

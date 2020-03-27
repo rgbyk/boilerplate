@@ -1,7 +1,6 @@
 // ==========================================
 // ! Toggle Theme (Light/Dark)
 // ==========================================
-
 function checkThemeCookie() {
     let siteThemeCookie = Cookies.get("theme");
 
@@ -55,7 +54,7 @@ function checkThemeState() {
 function siteToggleTheme() {
     checkThemeCookie();
 
-    document.getElementById("toggleTheme").addEventListener("click", function() {
+    document.getElementById("toggleTheme").addEventListener("click", () => {
         checkThemeState();
     });
 }
