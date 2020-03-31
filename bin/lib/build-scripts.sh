@@ -52,5 +52,4 @@ if [ -d $FOLDER_JEKYLL_ASSETS_JS ]; then
     cp $FOLDER_DIST_ASSETS_JS/app.min.js $FOLDER_JEKYLL_ASSETS_JS
 fi
 
-
 echo $green_ "... $ build-scripts.sh\n" $reset

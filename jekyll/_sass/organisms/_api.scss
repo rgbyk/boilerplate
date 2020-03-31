@@ -176,10 +176,10 @@
 .theme-dark .api-article--content .api-article--content_info .highlight,
 .theme-dark .api-article--content .api-article--content_code .highlight,
 .theme-dark .api-article--header .btn-secondary {
-  border-color: var(--grey-600a);
+  border-color: var(--grey-600-a);
 }
 .theme-dark .api-article--header {
-  background-color: var(--primary-700a);
+  background-color: var(--primary-700-a);
   color: var(--white);
 }
 .theme-dark .api-article--content_info .highlight {
@@ -189,14 +189,14 @@
   background-color: var(--grey-900a) !important;
 }
 .theme-dark .api-article--header .btn-secondary {
-  background-color: var(--primary-500a);
+  background-color: var(--primary-500-a);
   color: var(--primary-200);
 }
 .theme-dark .api-article--header .btn-secondary:hover {
-  background-color: var(--primary-400a);
+  background-color: var(--primary-400-a);
 }
 .theme-dark .api-article--header .btn-secondary:focus {
-  background-color: var(--primary-600a);
+  background-color: var(--primary-600-a);
   box-shadow: 0 0 0 0;
 }
 
@@ -204,21 +204,21 @@
   .theme-dark
     .api-article--content_code:hover
     .highlight::-webkit-scrollbar-track {
-    background-color: var(--grey-800a);
+    background-color: var(--grey-800-a);
   }
   .theme-dark
     .api-article--content_code:hover
     .highlight::-webkit-scrollbar-thumb {
-    background-color: var(--grey-400a);
+    background-color: var(--grey-400-a);
   }
 }
 
 .theme-light .api-article {
   transition: box-shadow ease 0.2s;
-  box-shadow: 0 1px 2px var(--grey-300a);
+  box-shadow: 0 1px 2px var(--grey-300-a);
 }
 .theme-light .api-article:hover {
-  box-shadow: 0 4px 8px var(--grey-700a);
+  box-shadow: 0 4px 8px var(--grey-700-a);
 }
 
 .theme-light .api-article--header,
@@ -230,7 +230,7 @@
   border-color: var(--grey-300);
 }
 .theme-light .api-article--header {
-  background-color: var(--primary-200a);
+  background-color: var(--primary-200-a);
   color: var(--grey-900);
 }
 .theme-light .api-article--content_info .highlight {
@@ -240,20 +240,20 @@
   background-color: var(--grey-100a) !important;
 }
 .theme-light .api-article--header .btn-secondary {
-  background-color: var(--primary-100a);
-  color: var(--primary-400n);
+  background-color: var(--primary-100-a);
+  color: var(--primary-400-n);
 }
 .theme-light .api-article--header .btn-secondary:hover {
-  background-color: var(--primary-200a);
+  background-color: var(--primary-200-a);
 }
 .theme-light .api-article--header .btn-secondary:focus {
   box-shadow: 0 0 0 0;
 }
 @media (min-width: 992px) {
   .theme-light .api-article--content_code .highlight::-webkit-scrollbar-track {
-    background-color: var(--grey-100a);
+    background-color: var(--grey-100-a);
   }
   .theme-light .api-article--content_code .highlight::-webkit-scrollbar-thumb {
-    background-color: var(--grey-800a);
+    background-color: var(--grey-800-a);
   }
 }

@@ -34,24 +34,24 @@
 }
 
 .theme-dark .btn-primary {
-  background-color: var(--primary-400a);
+  background-color: var(--primary-400-a);
   border-color: var(--primary-400);
   color: var(--white) !important;
 }
 
 .theme-light .btn-primary {
-  background-color: var(--primary-200n);
-  border-color: var(--primary-400a);
+  background-color: var(--primary-200-n);
+  border-color: var(--primary-400-a);
   color: var(--primary-700n) !important;
   font-weight: bold;
 }
 
 .theme-light .btn-primary:hover {
-  background-color: var(--primary-300n);
-  border-color: var(--primary-500a);
+  background-color: var(--primary-300-n);
+  border-color: var(--primary-500-a);
 }
 .theme-light .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem var(--primary-400a);
+  box-shadow: 0 0 0 0.2rem var(--primary-400-a);
 }
 
 [type="reset"],

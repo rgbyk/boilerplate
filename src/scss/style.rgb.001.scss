@@ -1,10 +1,11 @@
 @forward "../../node_modules/@rgbyk/color/src/scss/core" with (
-    $brand-color: #8e43e7,
+    $brand-color: #432dd9,
     $color-model: rgb,
 
     $color-mode-harmony: false,
     $color-scheme-neutral: false,
     $color-scheme-pastel: true,
+    $color-scheme-alpha: true,
 
     $color-mode-harmony-grayscale: false,
     $color-mode-harmony-grayscale-cool-mix: 3%,
@@ -23,10 +24,7 @@
     $color-scheme-warning: true,
     $color-scheme-success: true,
     $color-scheme-info: true,
-
-    $color-scheme-alpha: true,
-    $color-scheme-chromatic: false,
-
+    
     $enable-root-colors: true,
     $enable-utility-classes: false,
 );

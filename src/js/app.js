@@ -142,7 +142,7 @@ function onChangeColorBrand() {
     } else {}
 
     // create default paths
-    const path = `/colorimetry/assets/css/brand/${brand}/style.${model}`;
+    const path = `/color/assets/css/brand/${brand}/style.${model}`;
 
     function buildUri() {
         uri = '';

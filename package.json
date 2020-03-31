@@ -32,10 +32,10 @@
     "@babel/cli": "^7.7.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
-    "@rgbyk/color": "^1.1.4",
-    "autoprefixer": "^9.7.4",
-    "browserslist": "^4.10.0",
-    "caniuse-lite": "^1.0.30001027",
+    "@rgbyk/color": "^1.1.8",
+    "autoprefixer": "^9.7.5",
+    "browserslist": "^4.11.1",
+    "caniuse-lite": "^1.0.30001038",
     "css-declaration-sorter": "^5.1.1",
     "cssnano": "^4.1.10",
     "nodemon": "^2.0.2",
@@ -46,7 +46,7 @@
     "postcss-merge-selectors": "0.0.6",
     "postcss-sorting": "^5.0.1",
     "sass": "^1.26.0",
-    "terser": "^4.6.7",
+    "terser": "^4.6.9",
     "terser-dir": "^1.0.5"
   }
 }

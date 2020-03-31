@@ -9,34 +9,34 @@
 
 .theme-light {
   .tag-easy {
-    background-color: var(--success-400a);
-    color: var(--success-600n);
+    background-color: var(--success-400-a);
+    color: var(--success-600-n);
   }
 
   .tag-intermediate {
-    background-color: var(--warning-400a);
-    color: var(--warning-600n);
+    background-color: var(--warning-400-a);
+    color: var(--warning-600-n);
   }
 
   .tag-advanced {
-    background-color: var(--danger-400a);
-    color: var(--danger-600n);
+    background-color: var(--danger-400-a);
+    color: var(--danger-600-n);
   }
 }
 
 .theme-dark {
   .tag-easy {
-    background-color: var(--success-400a);
+    background-color: var(--success-400-a);
     color: var(--success-300);
   }
 
   .tag-intermediate {
-    background-color: var(--warning-400a);
+    background-color: var(--warning-400-a);
     color: var(--warning-300);
   }
 
   .tag-advanced {
-    background-color: var(--danger-400a);
+    background-color: var(--danger-400-a);
     color: var(--danger-300);
   }
 }
