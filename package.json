@@ -1,6 +1,6 @@
 {
   "name": "@rgbyk/boilerplate",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "an over-engineered boilerplate, but a good one indeed.",
   "keywords": [
     "rgbyk",
@@ -47,6 +47,7 @@
     "postcss-sorting": "^5.0.1",
     "sass": "^1.26.0",
     "terser": "^4.6.10",
-    "terser-dir": "^1.0.5"
+    "terser-dir": "^1.0.5",
+    "minimist": ">=0.2.1"
   }
 }
