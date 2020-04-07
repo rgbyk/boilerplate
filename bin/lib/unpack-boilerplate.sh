@@ -54,24 +54,18 @@ else
         echo $black "... $ mkdir \`$FOLDER_JEKYLL_SASS\`" $reset
         mkdir $FOLDER_JEKYLL_SASS
 
-        . $FOLDER_BIN/jekyll/css/rhythm.sh > $FOLDER_JEKYLL_SASS/_rhythm.scss
-        . $FOLDER_BIN/jekyll/css/type.sh > $FOLDER_JEKYLL_SASS/_type.scss
-        . $FOLDER_BIN/jekyll/css/color.sh > $FOLDER_JEKYLL_SASS/_color.scss
+        mkdir $FOLDER_JEKYLL_SASS/base
+        touch $FOLDER_JEKYLL_SASS/base/_index.scss
 
-        mkdir $FOLDER_JEKYLL_SASS/atoms
-        touch $FOLDER_JEKYLL_SASS/atoms/_index.scss
+        mkdir $FOLDER_JEKYLL_SASS/components
+        touch $FOLDER_JEKYLL_SASS/components/_index.scss
 
-        mkdir $FOLDER_JEKYLL_SASS/molecules
-        touch $FOLDER_JEKYLL_SASS/molecules/_index.scss
-
-        mkdir $FOLDER_JEKYLL_SASS/organisms
-        touch $FOLDER_JEKYLL_SASS/organisms/_index.scss
-
-        mkdir $FOLDER_JEKYLL_SASS/pages
-        touch $FOLDER_JEKYLL_SASS/pages/_index.scss
-
-        mkdir $FOLDER_JEKYLL_SASS/templates
-        touch $FOLDER_JEKYLL_SASS/templates/_index.scss
+        mkdir $FOLDER_JEKYLL_SASS/core
+        . $FOLDER_BIN/jekyll/css/rhythm.sh > $FOLDER_JEKYLL_SASS/core/_rhythm.scss
+        . $FOLDER_BIN/jekyll/css/type.sh > $FOLDER_JEKYLL_SASS/core/_type.scss
+        . $FOLDER_BIN/jekyll/css/color.sh > $FOLDER_JEKYLL_SASS/core/_color.scss
+        . $FOLDER_BIN/jekyll/css/core.sh > $FOLDER_JEKYLL_SASS/core/_index.scss
+        touch $FOLDER_JEKYLL_SASS/core/_grid.scss
     fi
 
     if [ ! -d $FOLDER_JEKYLL_ASSETS_FONTS ]; then
@@ -87,8 +81,8 @@ else
         echo $black "... $ mkdir \`$FOLDER_JEKYLL_ASSETS_JS\`" $reset
         mkdir $FOLDER_JEKYLL_ASSETS_JS
         touch $FOLDER_JEKYLL_ASSETS_JS/app.min.js
-        touch $FOLDER_JEKYLL_ASSETS_JS/holder.js
-        touch $FOLDER_JEKYLL_ASSETS_JS/html5shiv.js
+        # touch $FOLDER_JEKYLL_ASSETS_JS/holder.js
+        # touch $FOLDER_JEKYLL_ASSETS_JS/html5shiv.js
     fi
 
     if [ ! -d $FOLDER_JEKYLL_ASSETS_IMG ]; then

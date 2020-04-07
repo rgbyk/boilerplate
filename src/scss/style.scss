@@ -1,9 +1,9 @@
 @forward "../../node_modules/@rgbyk/color/src/scss/core" with (
-    $brand-color: #8e43e7,
+    $brand-color: #1800FB,
     $color-model: rgb,
 
     $color-mode-harmony: false,
-    $color-mode-harmony-grayscale: false,
+    $color-mode-harmony-grayscale: true,
     $color-mode-harmony-grayscale-cool-mix: 3%,
     $color-mode-harmony-grayscale-warm-mix: 2%,
 
@@ -19,7 +19,7 @@
 
     $color-scheme-analogous: true,
     $color-scheme-complementary: true,
-    $color-scheme-hues: true,
+    $color-scheme-hues: false,
     $color-scheme-split: true,
     $color-scheme-square: true,
     $color-scheme-tetradic: true,
@@ -28,12 +28,11 @@
     $color-scheme-danger: true,
     $color-scheme-warning: true,
     $color-scheme-success: true,
-    $color-scheme-info: true,
+    $color-scheme-info: false,
 
     $color-scheme-neutral: true,
-    $color-scheme-pastel: true,
+    $color-scheme-pastel: false,
     $color-scheme-alpha: false,
-    $color-scheme-chromatic: false,
 
     $enable-root-colors: true
 );

@@ -1,4 +1,3 @@
-cat <<- _EOF_
 source: .
 destination: _site
 plugins_dir: _plugins
@@ -85,4 +84,3 @@ liquid:
   error_mode: warn # lax, warn, strict
   strict_filters: false
   strict_variables: false
-_EOF_
