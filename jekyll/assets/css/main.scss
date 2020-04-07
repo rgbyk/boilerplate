@@ -1,4 +1,3 @@
-cat <<- _EOF_
 ---
 # Leave to compile
 ---
@@ -8,4 +7,3 @@ cat <<- _EOF_
 // @import 'base/_index.scss';
 // @import 'mixins/_index.scss';
 // @import 'components/_index.scss';
-_EOF_

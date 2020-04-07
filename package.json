@@ -1,6 +1,6 @@
 {
   "name": "@rgbyk/boilerplate",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "an over-engineered boilerplate, but a good one indeed.",
   "keywords": [
     "rgbyk",
@@ -33,9 +33,9 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@rgbyk/color": "^1.1.4",
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.7.6",
     "browserslist": "^4.10.0",
-    "caniuse-lite": "^1.0.30001027",
+    "caniuse-lite": "^1.0.30001039",
     "css-declaration-sorter": "^5.1.1",
     "cssnano": "^4.1.10",
     "nodemon": "^2.0.2",
