@@ -1,6 +1,6 @@
 {
   "name": "@rgbyk/boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "an over-engineered boilerplate, but a good one indeed.",
   "keywords": [
     "rgbyk",
@@ -23,6 +23,7 @@
     "build-styles": "chmod +x ./bin/lib/build-styles.sh && ./bin/lib/build-styles.sh",
     "dev": "npm run watch:build-styles & npm run watch:build-scripts",
     "kill": "chmod +x ./bin/lib/kill.sh && ./bin/lib/kill.sh",
+    "clean": "chmod +x ./bin/lib/clean.sh && ./bin/lib/clean.sh",
     "unpack-boilerplate": "chmod +x ./bin/lib/unpack-boilerplate.sh && ./bin/lib/unpack-boilerplate.sh",
     "unpack-rgbyk": "chmod +x ./bin/lib/unpack-rgbyk.sh && ./bin/lib/unpack-rgbyk.sh",
     "watch:build-scripts": "nodemon --watch src/js -e js -x \"npm run build-scripts\"",

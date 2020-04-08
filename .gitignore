@@ -1,9 +1,9 @@
 # Numerous folders
 # ------------------------------------------------
 
-node_modules
-dist
-jekyll
+node_modules/
+dist/
+jekyll/
 
 # Numerous always-ignore extensions
 # ------------------------------------------------
