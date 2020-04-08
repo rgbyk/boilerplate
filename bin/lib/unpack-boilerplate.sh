@@ -112,11 +112,11 @@ else
     if [ ! -d $FOLDER_JEKYLL_INCLUDES ]; then
         echo $black "... $ mkdir \`$FOLDER_JEKYLL_INCLUDES\`" $reset
         mkdir $FOLDER_JEKYLL_INCLUDES
-        . $FOLDER_BIN/jekyll/includes/header.sh > $FOLDER_JEKYLL_INCLUDES/header.html
-        . $FOLDER_BIN/jekyll/includes/footer.sh > $FOLDER_JEKYLL_INCLUDES/footer.html
-        . $FOLDER_BIN/jekyll/includes/meta.sh > $FOLDER_JEKYLL_INCLUDES/meta.html
-        . $FOLDER_BIN/jekyll/includes/scripts.sh > $FOLDER_JEKYLL_INCLUDES/scripts.html
-        . $FOLDER_BIN/jekyll/includes/symbols.sh > $FOLDER_JEKYLL_INCLUDES/symbols.html
+        . $FOLDER_BIN/jekyll/includes/header.sh > $FOLDER_JEKYLL_INCLUDES/site-header.html
+        . $FOLDER_BIN/jekyll/includes/footer.sh > $FOLDER_JEKYLL_INCLUDES/site-footer.html
+        . $FOLDER_BIN/jekyll/includes/meta.sh > $FOLDER_JEKYLL_INCLUDES/site-meta.html
+        . $FOLDER_BIN/jekyll/includes/scripts.sh > $FOLDER_JEKYLL_INCLUDES/site-scripts.html
+        . $FOLDER_BIN/jekyll/includes/symbols.sh > $FOLDER_JEKYLL_INCLUDES/site-symbols.html
     fi
 
     if [ ! -d $FOLDER_JEKYLL_PLUGINS ]; then

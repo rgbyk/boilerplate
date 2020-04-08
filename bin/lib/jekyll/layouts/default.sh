@@ -12,15 +12,15 @@ layout: compress
 
 <!DOCTYPE html>
 <html xml:lang="en" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
-    {% include meta.html %}
+    {% include site-meta.html %}
     <body>
         <main class="site-main" id="siteMain">
-            {% include header.html %}
+            {% include site-header.html %}
             {{ content }}
-            {% include footer.html %}
+            {% include site-footer.html %}
         </main>
-        {% include symbols.html %}
-        {% include scripts.html %}
+        {% include site-symbols.html %}
+        {% include site-scripts.html %}
     </body>
 </html>
 _EOF_
