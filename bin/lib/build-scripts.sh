@@ -11,6 +11,7 @@
 set -e
 
 . ./bin/lib/config.sh
+. ./bin/lib/checks.sh
 
 echo $white_ "... $ build-scripts.sh;" $reset
 

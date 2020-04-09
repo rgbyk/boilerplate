@@ -1,1 +1,1 @@
-// silence
+console.log("core");
