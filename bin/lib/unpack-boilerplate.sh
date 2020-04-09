@@ -34,7 +34,6 @@ else
         . $FOLDER_BIN/jekyll/root/gemfile.sh > $FOLDER_JEKYLL/Gemfile
         . $FOLDER_BIN/jekyll/root/index.sh > $FOLDER_JEKYLL/index.html
         . $FOLDER_BIN/jekyll/root/sitemap.sh > $FOLDER_JEKYLL/sitemap.xml
-        . $FOLDER_BIN/jekyll/root/sitemap.sh > $FOLDER_JEKYLL/color.html
         . $FOLDER_BIN/jekyll/root/manifest.sh > $FOLDER_JEKYLL/manifest.json
         sleep 0.1
     fi
