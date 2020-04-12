@@ -1,19 +1,26 @@
 #!/bin/sh
-
-#######################################################################
-## @rgbyk/boilerplate => build-scripts.sh
-#######################################################################
-
-# 1. $ chmod +x ./bin/lib/build-scripts.sh
-# 2. $ ./bin/lib/build-scripts.sh
-# 3. $ "build-scripts": "chmod +x ./bin/lib/build-scripts.sh && ./bin/lib/build-scripts.sh"
+#
+# ---------------------------------------------------------------------
+# Scripts
+# ---------------------------------------------------------------------
+#
+# 1. $ chmod +x ./bin/lib/scripts.sh
+# 2. $ ./bin/lib/scripts.sh
+# 3. $ "scripts": "chmod +x ./bin/lib/scripts.sh && ./bin/lib/scripts.sh"
+#
 
 set -e
 
-. ./bin/lib/config.sh
-. ./bin/lib/checks.sh
+## ---------------------------------------------------------------------
+## Variables
+## ---------------------------------------------------------------------
 
-echo $white_ "... $ build-scripts.sh;" $reset
+. ./bin/lib/core/config.sh
+. ./bin/lib/core/checklist.sh
+
+## START ------------------------------------
+
+echo $white_ "... $ @rgbyk/scripts.sh;" $reset
 
 if [ -d $FOLDER_SRC_JS_VENDORS ]; then
     echo $black "... $ bundle $FOLDER_SRC_JS_VENDORS" $reset
@@ -47,11 +54,12 @@ sleep 0.5
 
 echo $black "... $ terser $FOLDER_DIST_ASSETS_JS/app.js;" $reset
 terser $FOLDER_DIST_ASSETS_JS/app.js -o $FOLDER_DIST_ASSETS_JS/app.min.js -c -m &>/dev/null &
-sleep 0.5
 
 if [ -d $FOLDER_JEKYLL_ASSETS_JS ]; then
+    sleep 1
     cp $FOLDER_DIST_ASSETS_JS/app.min.js $FOLDER_JEKYLL_ASSETS_JS
 fi
 
+echo $green_ "... $ @rgbyk/scripts.sh\n" $reset
 
-echo $green_ "... $ build-scripts.sh\n" $reset
+## END --------------------------------------

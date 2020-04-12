@@ -1,17 +1,24 @@
 #!/bin/sh
-
-#######################################################################
-## @rgbyk/boilerplate => checks.sh
-#######################################################################
-
-# 1. $ chmod +x ./bin/lib/checks.sh
-# 2. $ ./bin/lib/checks.sh
+#
+# ---------------------------------------------------------------------
+# Run Folder Structure
+# ---------------------------------------------------------------------
+#
+# 1. $ chmod +x ./bin/lib/core/checklist.sh
+# 2. $ ./bin/lib/core/checklist.sh
+#
 
 set -e
 
-. ./bin/lib/config.sh
+## ---------------------------------------------------------------------
+## Variables
+## ---------------------------------------------------------------------
 
-echo $white_ "... $ checks.sh;" $reset
+. ./bin/lib/core/config.sh
+
+## START ------------------------------------
+
+echo $white_ "... $ @rgbyk/checklist.sh;" $reset
 
 if [ ! -d $FOLDER_DIST ]; then
     echo $black "... $ mkdir \`$FOLDER_DIST\`" $reset
@@ -43,4 +50,6 @@ if [ ! -d $FOLDER_DIST_ASSETS_JS_BUNDLE ]; then
     sleep 0.1
 fi
 
-echo $green_ "... $ checks.sh;\n" $reset
+echo $green_ "... $ @rgbyk/checklist.sh;\n" $reset
+
+## END --------------------------------------

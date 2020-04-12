@@ -14,13 +14,13 @@
 
 ### installation
 
-1. `npm run unpack-rgbyk`
-2. `npm run unpack-boilerplate`
+1. `npm run installer`
+2. `npm run unpack`
 
 ### cli
 
-1. `npm run build-styles` 
-2. `npm run build-scripts`
+1. `npm run styles` 
+2. `npm run scripts`
 
 ----
 

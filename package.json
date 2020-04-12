@@ -1,6 +1,6 @@
 {
   "name": "@rgbyk/boilerplate",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "an over-engineered boilerplate, but a good one indeed.",
   "keywords": [
     "rgbyk",
@@ -19,15 +19,15 @@
   "license": "MIT",
   "author": "Daniel Haim",
   "scripts": {
-    "build-scripts": "chmod +x ./bin/lib/build-scripts.sh && ./bin/lib/build-scripts.sh",
-    "build-styles": "chmod +x ./bin/lib/build-styles.sh && ./bin/lib/build-styles.sh",
-    "dev": "npm run watch:build-styles & npm run watch:build-scripts",
-    "kill": "chmod +x ./bin/lib/kill.sh && ./bin/lib/kill.sh",
-    "clean": "chmod +x ./bin/lib/clean.sh && ./bin/lib/clean.sh",
-    "unpack-boilerplate": "chmod +x ./bin/lib/unpack-boilerplate.sh && ./bin/lib/unpack-boilerplate.sh",
-    "unpack-rgbyk": "chmod +x ./bin/lib/unpack-rgbyk.sh && ./bin/lib/unpack-rgbyk.sh",
-    "watch:build-scripts": "nodemon --watch src/js -e js -x \"npm run build-scripts\"",
-    "watch:build-styles": "nodemon --watch src/scss -e scss -x \"npm run build-styles\""
+    "clean": "chmod +x ./bin/lib/core/clean.sh && ./bin/lib/core/clean.sh",
+    "dev": "npm run watch:styles & npm run watch:scripts",
+    "installer": "chmod +x ./bin/lib/core/installer.sh && ./bin/lib/core/installer.sh",
+    "kill": "chmod +x ./bin/lib/core/kill.sh && ./bin/lib/core/kill.sh",
+    "scripts": "chmod +x ./bin/lib/scripts.sh && ./bin/lib/scripts.sh",
+    "styles": "chmod +x ./bin/lib/styles.sh && ./bin/lib/styles.sh",
+    "unpack": "chmod +x ./bin/lib/core/unpack.sh && ./bin/lib/core/unpack.sh",
+    "watch:scripts": "nodemon --watch src/js -e js -x \"npm run scripts\"",
+    "watch:styles": "nodemon --watch src/scss -e scss -x \"npm run styles\""
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
@@ -39,6 +39,7 @@
     "caniuse-lite": "^1.0.30001040",
     "css-declaration-sorter": "^5.1.1",
     "cssnano": "^4.1.10",
+    "minimist": ">=0.2.1",
     "nodemon": "^2.0.3",
     "postcss-cli": "^7.1.0",
     "postcss-combine-duplicated-selectors": "^8.1.0",
@@ -48,7 +49,6 @@
     "postcss-sorting": "^5.0.1",
     "sass": "^1.26.0",
     "terser": "^4.6.11",
-    "terser-dir": "^1.0.7",
-    "minimist": ">=0.2.1"
+    "terser-dir": "^1.0.7"
   }
 }
