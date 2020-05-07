@@ -565,10 +565,9 @@
   border-bottom-color: var(--grey-300-a);
 }
 
-// .section-block--content p{
-//   font-size: 16px;
-//   max-width: 100%;
-// }
+.section-block--content p a{
+  text-decoration: underline;
+}
 
 .theme-light .section-block + .section-block {
   border-top-color: var(--grey-400-a);
