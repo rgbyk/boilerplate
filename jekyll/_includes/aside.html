@@ -1,21 +1,21 @@
 <div class="aside-section aside-section--form cvd">
-    <h3 class="aside-section--title">Options</h3>
+    <h3 class="aside-section--title">Color Options</h3>
     <div class="aside-section--list">
         <div class="aside-section--list_item">
-            <label for="demo-color-brand">Brand Color</label>
+            <label for="demo-color-brand">Primary</label>
             <select name="color-brand" id="demo-color-brand" onchange="onChangeColorBrand(); changeStoreDataSelect(this)" class="store-data--select">
-                <option value="default" selected="selected">Default</option>
-                <option value="airbnb">Airbnb</option>
-                <option value="spotify">Spotify</option>
-                <option value="twitter">Twitter</option>
-                <option value="cocacola">Coca Cola</option>
-                <option value="disneyxd">Disney XD</option>
-                <option value="facebook">Facebook</option>
-                <option value="snapchat">Snapchat</option>
+                <option value="default" selected="selected">#432dd9</option>
+                <option value="airbnb">#fd5c63</option>
+                <option value="spotify">#1db954</option>
+                <option value="twitter">#1da1f2</option>
+                <option value="cocacola">#ed1c16</option>
+                <option value="disneyxd">#0af167</option>
+                <option value="facebook">#3b5998</option>
+                <option value="snapchat">#fffc00</option>
             </select>
         </div>
         <div class="aside-section--list_item">
-            <label for="demo-color-model">Color Model</label>
+            <label for="demo-color-model">Model</label>
             <select name="color-model" id="demo-color-model" onchange="onChangeColorBrand(); changeStoreDataSelect(this);" class="store-data--select">
                 <option value="rgb" selected="selected">RGB</option>
                 <option value="ryb">RYB</option>
@@ -25,7 +25,7 @@
     <hr class="size-xs">
     <h3 class="aside-section--title">Schemes</h3>
     <div class="aside-section--list_item">
-        <label for="demo-color-harmony" class="aside-section--switch_label">Color Harmony</label>
+        <label for="demo-color-harmony" class="aside-section--switch_label">Harmonized</label>
         <button role="switch" aria-checked="false" id="demo-color-harmony" class="aside-section--switch switch store-data">
             <span class="false">false</span>
             <span class="true">true</span>
@@ -33,7 +33,7 @@
     </div>
     <div class="aside-section--list">
         <div class="aside-section--list_item">
-            <label for="demo-color-neutral" class="aside-section--switch_label">Neutral</label>
+            <label for="demo-color-neutral" class="aside-section--switch_label">Neutralized</label>
             <button role="switch" aria-checked="false" id="demo-color-neutral" class="aside-section--switch switch store-data">
                 <span class="false">false</span>
                 <span class="true">true</span>
@@ -57,15 +57,8 @@
         {% endcomment %}
     </div>
     <hr class="size-xs">
-    <h3 class="aside-section--title">Accessibility</h3>
+    <h3 class="aside-section--title">Accessibility Simulation</h3>
     <div class="aside-section--list">
-        <div class="aside-section--list_item">
-            <label for="toggleTheme" class="aside-section--switch_label">Dark Mode</label>
-            <button role="switch" aria-checked="false" id="toggleTheme" class="aside-section--switch switch store-data">
-                <span class="false">false</span>
-                <span class="true">true</span>
-            </button>
-        </div>
         <div class="aside-section--list_item">
             <label for="demo-color-cvd">Color Blindness</label>
             <select name="color-cvd" id="demo-color-cvd" onchange="onChangeColorBlindness(); changeStoreDataSelect(this);" class="store-data--select">
@@ -79,6 +72,13 @@
                 <option value="achromatopsia">Achromatopsia</option>
                 <option value="achromatomaly">Achromatomaly</option>
             </select>
+        </div>
+        <div class="aside-section--list_item">
+            <label for="toggleTheme" class="aside-section--switch_label">Dark Mode</label>
+            <button role="switch" aria-checked="false" id="toggleTheme" class="aside-section--switch switch store-data">
+                <span class="false">false</span>
+                <span class="true">true</span>
+            </button>
         </div>
     </div>
 </div>

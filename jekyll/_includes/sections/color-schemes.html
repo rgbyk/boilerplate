@@ -9,56 +9,59 @@
             </h2>
         </div>
     </header>
-{% for scheme in site.data.schemes %}
-    <div class="cs-container cvd" id="section-cs.{{ scheme.name | downcase }}">
-        <header class="api-header">
-            <div class="api-header--meta max-lf">
-                <h3 class="api-header--title">
-                    <a class="api-header--title_link" href="#section-cs.{{ scheme.name | downcase }}">
-                        <i class="ico-hashtag"></i>
-                    </a>
-                    <span class="api-header--title_text">{{ scheme.name | capitalize }}</span>
-                </h3>
-            </div>
-        </header>
-        <div class="cs-wrapper">
-            <div class="cs-row cs-row--lg">
-            {% for colors in scheme.colors %}
-                {% if scheme.monos %}
-                    {% for mono in scheme.monos %}
-                    <div class="cs-row--item cs-row--data" aria-hidden="true">
-                        <figure 
-                            tooltip="{{ colors.name }}-{{ mono.weight }}" flow="up"
-                            class="cs-item--figure bg-{{ colors.name }}-{{ mono.weight }}"
-                            data-clipboard-text="">
-                            <figcaption class="cs-item--figcaption">
-                                <span class="cs-item--note text-bold">{{ mono.weight }}</span>
-                                <span class="cs-item--name"></span>
-                                <span class="cs-item--hex"></span>
-                                <span class="cs-item--rgb"></span>
-                                <span class="cs-item--var">var(--{{ colors.name }}-{{ mono.weight }})</span>
-                            </figcaption>
-                        </figure>
+    <div class="color-scheme--container active" id="colorSchemeContainer">
+        {% for scheme in site.data.schemes %}
+            <div class="cs-container cvd" id="section-cs.{{ scheme.name | downcase }}">
+                <header class="api-header">
+                    <div class="api-header--meta max-lf">
+                        <h3 class="api-header--title">
+                            <a class="api-header--title_link" href="#section-cs.{{ scheme.name | downcase }}">
+                                <i class="ico-hashtag"></i>
+                            </a>
+                            <span class="api-header--title_text">{{ scheme.name | capitalize }}</span>
+                        </h3>
                     </div>
+                </header>
+                <div class="cs-wrapper">
+                    <div class="cs-row cs-row--lg">
+                    {% for colors in scheme.colors %}
+                        {% if scheme.monos %}
+                            {% for mono in scheme.monos %}
+                            <div class="cs-row--item cs-row--data" aria-hidden="true">
+                                <figure 
+                                    tooltip="{{ colors.name }}-{{ mono.weight }}" flow="up"
+                                    class="cs-item--figure bg-{{ colors.name }}-{{ mono.weight }}"
+                                    data-clipboard-text="">
+                                    <figcaption class="cs-item--figcaption">
+                                        <span class="cs-item--note text-bold">{{ mono.weight }}</span>
+                                        <span class="cs-item--name"></span>
+                                        <span class="cs-item--hex"></span>
+                                        <span class="cs-item--rgb"></span>
+                                        <span class="cs-item--var">var(--{{ colors.name }}-{{ mono.weight }})</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="cs-row--item cs-row--data" aria-hidden="true">
+                                <figure tooltip="{{ colors.name }}" flow="up"
+                                    class="cs-item--figure bg-{{ colors.name }}"
+                                    data-clipboard-text="">
+                                    <figcaption class="cs-item--figcaption">
+                                        <span class="cs-item--note">{{ colors.name }}</span>
+                                        <span class="cs-item--name"></span>
+                                        <span class="cs-item--hex"></span>
+                                        <span class="cs-item--rgb"></span>
+                                        <span class="cs-item--var">var(--{{ colors.name }})</span>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        {% endif %}
                     {% endfor %}
-                {% else %}
-                    <div class="cs-row--item cs-row--data" aria-hidden="true">
-                        <figure tooltip="{{ colors.name }}" flow="up"
-                            class="cs-item--figure bg-{{ colors.name }}"
-                            data-clipboard-text="">
-                            <figcaption class="cs-item--figcaption">
-                                <span class="cs-item--note">{{ colors.name }}</span>
-                                <span class="cs-item--name"></span>
-                                <span class="cs-item--hex"></span>
-                                <span class="cs-item--rgb"></span>
-                                <span class="cs-item--var">var(--{{ colors.name }})</span>
-                            </figcaption>
-                        </figure>
                     </div>
-                {% endif %}
-            {% endfor %}
-            </div>
-        </div>
-    </div>     
-{% endfor %}
+                </div>
+            </div>     
+        {% endfor %}
+        <button class="btn btn-md btn-primary cvd" id="showAllColorSchemes" onclick="handleRevealSwitch();">View All Schemes</button>
+    </div>
 </section>

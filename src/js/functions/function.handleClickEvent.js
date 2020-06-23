@@ -11,3 +11,7 @@ function handleClickEvent(evt) {
         el.setAttribute("aria-checked", "true");
     }
 }
+
+function handleRevealSwitch() {
+    document.getElementById("colorSchemeContainer").classList.remove("active");
+}

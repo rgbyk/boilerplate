@@ -40,15 +40,15 @@
 }
 
 .theme-light .btn-primary {
-  background-color: var(--primary-200-n);
-  border-color: var(--primary-400-a);
-  color: var(--primary-700n) !important;
+  background-color: var(--primary-200);
+  border-color: var(--primary-400);
+  color: var(--primary-700) !important;
   font-weight: bold;
 }
 
 .theme-light .btn-primary:hover {
-  background-color: var(--primary-300-n);
-  border-color: var(--primary-500-a);
+  background-color: var(--primary-300);
+  border-color: var(--primary-500);
 }
 .theme-light .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem var(--primary-400-a);
