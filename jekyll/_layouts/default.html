@@ -1,5 +1,7 @@
 ---
+
 layout: compress
+
 ---
 
 {%- assign FOLDER_JS = '/assets/js' | prepend: site.baseurl | prepend: site.url -%}
@@ -11,8 +13,10 @@ layout: compress
 <html xml:lang="en" lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" class="theme-dark">
     {% include meta.html %}
     <body>
-        <div class="site-header--rainbow cvd"></div>
         <main class="site-grid">
+            <div class="site-grid--rainbow">
+                <div class="site-header--rainbow cvd"></div>
+            </div>
             <header class="site-grid--header">
                 {% include header.html %}                
             </header>
@@ -27,4 +31,3 @@ layout: compress
         {% include scripts.html %}
     </body>
 </html>
-

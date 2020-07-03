@@ -3,15 +3,15 @@
     <div class="aside-section--list">
         <div class="aside-section--list_item">
             <label for="demo-color-brand">Primary Color</label>
-            <select name="color-brand" id="demo-color-brand" onchange="onChangeColorBrand(); changeStoreDataSelect(this)" class="store-data--select text-uppercase">
-                <option value="default" selected="selected">#432dd9</option>
-                <option value="airbnb">#fd5c63</option>
-                <option value="spotify">#1db954</option>
-                <option value="twitter">#1da1f2</option>
-                <option value="cocacola">#ed1c16</option>
-                <option value="disneyxd">#0af167</option>
-                <option value="facebook">#3b5998</option>
-                <option value="snapchat">#fffc00</option>
+            <select name="color-brand" id="demo-color-brand" onchange="onChangeColorBrand(); changeStoreDataSelect(this)" class="store-data--select">
+                <option value="default" selected="selected">Default (#432dd9)</option>
+                <option value="airbnb">Airbnb (#fd5c63)</option>
+                <option value="spotify">Spotify (#1db954)</option>
+                <option value="twitter">Twitter (#1da1f2)</option>
+                <option value="cocacola">Coca Cola (#ed1c16)</option>
+                <option value="disneyxd">Disney XD (#0af167)</option>
+                <option value="facebook">Facebook (#3b5998)</option>
+                <option value="snapchat">Snapchat (#fffc00)</option>
             </select>
         </div>
         <div class="aside-section--list_item">
@@ -57,7 +57,7 @@
         {% endcomment %}
     </div>
     <hr class="size-xs">
-    <h3 class="aside-section--title">Accessibility Simulation</h3>
+    <h3 class="aside-section--title">Accessibility Mode</h3>
     <div class="aside-section--list">
         <div class="aside-section--list_item">
             <label for="demo-color-cvd">Color Blindness</label>
@@ -73,7 +73,7 @@
                 <option value="achromatomaly">Achromatomaly</option>
             </select>
         </div>
-        <div class="aside-section--list_item">
+        <div class="aside-section--list_item" style="display: none;">
             <label for="toggleTheme" class="aside-section--switch_label">Dark Mode</label>
             <button role="switch" aria-checked="false" id="toggleTheme" class="aside-section--switch switch store-data">
                 <span class="false">false</span>

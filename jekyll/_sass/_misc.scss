@@ -573,16 +573,21 @@
 .theme-light .section-block + .section-block {
   border-top-color: var(--grey-400-a);
 }
+
 .theme-light .section-block--content p,
-.theme-light .section-block--content ul {
+.theme-light .section-block--content ul,
+.theme-light .section-block--content ol,
+.theme-light .section-block--content table {
   color: var(--grey-600);
 }
 
 .theme-dark .section-block + .section-block {
   border-top-color: var(--grey-200-a);
 }
+
 .theme-dark .section-block--content p,
 .theme-dark .section-block--content ul,
-.theme-dark .section-block--content ol {
+.theme-dark .section-block--content ol,
+.theme-dark .section-block--content table {
   color: var(--grey-300);
 }

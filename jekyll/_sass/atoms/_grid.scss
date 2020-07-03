@@ -5,6 +5,7 @@ body {
   display: grid;
   grid-gap: 1rem;
   grid-template-areas:
+    "rainbow"
     "header"
     "aside"
     "main";
@@ -29,6 +30,10 @@ body {
     border-color: var(--primary-400-a);
 }
 
+.site-grid--rainbow{
+  grid-area: rainbow;
+}
+
 .site-grid--header {
   grid-area: header;
 }
@@ -42,6 +47,7 @@ body {
 @media (min-width: 768px) {
   .site-grid {
     grid-template-areas:
+      "rainbow rainbow rainbow"
       "header header header"
       "aside main main"
       "aside main main"

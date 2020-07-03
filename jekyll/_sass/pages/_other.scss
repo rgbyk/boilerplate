@@ -347,3 +347,47 @@
 .fill-v5-c0-h9 {
   fill: #8f8f8f !important;
 }
+
+
+.table{
+  width: 100%;
+  max-width: 100%;
+  border-collapse: inherit;
+  border-spacing: 0;
+
+  overflow: hidden;
+  border: 1px solid;
+
+
+  th, td{
+    vertical-align: middle;
+    padding: .5rem;
+  }
+
+  th:not(:last-child),
+  td:not(:last-child){
+    border-right: 1px solid;    
+  }
+
+  tr th,
+  tr:not(:last-child) td{
+    border-bottom: 1px solid;
+  }
+  
+  thead th{
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-primary-500);
+    text-transform: uppercase;
+    font-size: 13.33px;
+    letter-spacing: 2px;
+  }
+}
+
+.table { border-radius: 1px; }
+
+.table { background-color: var(--primary-800-a); }
+.table,
+.table tr th,
+.table tr:not(:last-child) td,
+.table th:not(:last-child),
+.table td:not(:last-child) { border-color: var(--primary-400-a); }
