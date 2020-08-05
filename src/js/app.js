@@ -19,7 +19,9 @@ function onChangeColorBlindness() {
     document.querySelectorAll(".cvd").forEach(({
         style
     }) => {
-        style.filter = `url('#${option.value}') grayscale(0)`;
+        if ( style.filter != "None" ){
+            style.filter = `url('.#${option.value}') grayscale(0)`;
+        }
     });
 }
 // ==========================================
