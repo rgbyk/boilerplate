@@ -210,4 +210,26 @@ ready(() => {
     document.querySelectorAll(".store-data").forEach(e => {
         e.addEventListener("click", onChangeColorBrand, true);
     });
+
+
+    // Todo ...
+    document.querySelectorAll(".particle-tabs > div").forEach(el => {
+        el.classList.add('particle-item--' + el.id);
+    });
+
+    function clickParticleTab(e) {
+    document.querySelectorAll(".particle-tabs > div").forEach(el => {
+        el.classList.add("hide");
+    });
+
+    document.querySelectorAll("a[data-tab-id]").forEach(el => {
+        el.classList.remove("active");
+    });                
+
+    const eTab = document.querySelector('.particle-item--' + e.getAttribute("data-tab-id"));
+        e.classList.add("active");
+        eTab.classList.remove("hide")
+    }
+
+
 });
