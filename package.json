@@ -48,7 +48,7 @@
     "postcss-merge-selectors": "0.0.6",
     "postcss-sorting": "^6.0.0",
     "sass": "^1.29.0",
-    "terser": "^5.3.8",
+    "terser": "^5.14.2",
     "terser-dir": "^1.0.7"
   }
 }
