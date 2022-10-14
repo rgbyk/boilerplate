@@ -1,8 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 group :jekyll_plugins do
-    gem 'jekyll', '~> 4.0.0'
-    gem 'jekyll-inline-svg'
-    # gem 'jekyll-autoprefixer'
-    # gem 'jekyll-postcss'
+    gem "jekyll"
+    gem "jekyll-inline-svg"
 end
+
+gem "webrick", "~> 1.7"
+
