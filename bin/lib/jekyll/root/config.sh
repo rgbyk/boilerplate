@@ -28,11 +28,10 @@ exclude:
   - vendor/ruby/
 
 # Gems
-gems:
-  - jekyll-inline-svg
+# gems:
 
-svg:
-  optimize: true
+# svg:
+  # optimize: true
 
 # Plugins
 whitelist: []
