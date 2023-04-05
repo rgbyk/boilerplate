@@ -90,11 +90,5 @@ cat <<- _EOF_
     <meta name="msapplication-starturl" content="{{ site.baseurl | prepend: site.url }}/">
     <meta name="msapplication-tap-highlight" content="no">
     {% endcomment %}
-
-    {% comment %}
-    <!--[if lt IE 9]>
-      <script src="{{ site.baseurl | prepend: site.url }}/assets/js/html5shiv.js"></script>
-    <![endif]-->
-    {% endcomment %}
 </head>
 _EOF_

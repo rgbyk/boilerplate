@@ -23,8 +23,6 @@
     "installer": "chmod +x ./bin/lib/core/installer.sh && ./bin/lib/core/installer.sh",
     "kill": "chmod +x ./bin/lib/core/kill.sh && ./bin/lib/core/kill.sh",
     "unpack": "chmod +x ./bin/lib/core/unpack.sh && ./bin/lib/core/unpack.sh",
-    "tree": "tree -I 'node_modules'",
-    "release": "npm version patch && git diff-index --quiet HEAD -- && git add --force package.json package-lock.json && git commit -m 'Bump version and build package for release' && git push",
     "dev": "npm run watch:styles & npm run watch:scripts",
     "scripts": "chmod +x ./bin/lib/scripts.sh && ./bin/lib/scripts.sh",
     "styles": "chmod +x ./bin/lib/styles.sh && ./bin/lib/styles.sh",

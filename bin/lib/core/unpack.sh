@@ -150,7 +150,7 @@ else
     
     ## START ------------------------------------
     
-    printf "%s Do you wish to install the bundle? %s" $white_ $reset
+    printf "%s Do you wish to install the bundle? Y/n %s" $white_ $reset
     read answer
     echo ""
 
@@ -165,6 +165,37 @@ else
             echo $black "... $ bundll install; break;" $reset
             bundle install &>/dev/null; break;
         fi
+    fi
+
+    ## START ------------------------------------
+    
+    printf "%s Experimental: Remove unnecessary scripts in package.json? Y/n? %s" $white_ $reset
+    read answer
+    echo ""
+
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        echo $red_ "... $ experimental\n" $reset
+        sed -i.bak '/"clean":/,/"unpack":/ {
+          /"clean":/d
+          /"installer":/d
+          /"kill":/d
+          /"unpack":/d
+        }' package.json
+    fi
+
+    echo $green_ "... $ rgbyk-unpack.sh\n" $reset
+
+    ## END --------------------------------------
+
+    ## START ------------------------------------
+    
+    printf "%s Did everything install correctly? Y/n? %s" $white_ $reset
+    read answer
+    echo ""
+
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        echo $red_ "... $ spring cleaning\n" $reset
+        rm -rf ./lib/core/kill.sh ./lib/core/clean.sh ./lib/core/boilerplate ./lib/core/unpack.sh
     fi
 
     echo $green_ "... $ rgbyk-unpack.sh\n" $reset

@@ -28,11 +28,6 @@ exclude:
   - vendor/ruby/
 
 # Gems
-# gems:
-  # - jekyll-inline-svg
-
-svg:
-  optimize: true
 
 # Plugins
 whitelist: []
@@ -65,7 +60,7 @@ incremental: false
 
 # Serving
 detach: false
-port: 8005
+port: 8999
 host: localhost
 url: https://example.com
 baseurl: "" # "/folder"
